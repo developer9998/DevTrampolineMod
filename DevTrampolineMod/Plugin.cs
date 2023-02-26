@@ -137,7 +137,7 @@ namespace DevTrampolineMod
                             previewTrmp.transform.SetParent(folder.transform, true);
                         }
 
-                        if (Physics.Raycast(Player.Instance.rightHandTransform.position, -Player.Instance.rightHandTransform.up, out RaycastHit hit, 15 * Player.Instance.scale, Player.Instance.locomotionEnabledLayers))
+                        if (Physics.Raycast(Player.Instance.rightHandTransform.position, -Player.Instance.rightHandTransform.up, out RaycastHit hit, 250 * Player.Instance.scale, Player.Instance.locomotionEnabledLayers))
                         {
                             previewTrmp.transform.position = hit.point + (hit.normal * 0.15f * Player.Instance.scale);
                             previewTrmp.transform.localScale = Vector3.one * 0.5f * Player.Instance.scale;
